@@ -6,102 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RTVE Portfolio</title>
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <!--FONTS--> 
+    <!-- FONTS --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--jquery --> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+                console.log('documento jquery cargado.')
+        });
+    </script>
+
+
+
 </head>
 <body>
+    
     <header>
         <div id="menu">
-            <a class="logo" href="../index.html">
-                <img src="../img/logo_hiberus.svg" alt="logo RTVE Cabecera">
+            <a class="logo" href="index.html">
+               <img src="img/logo_hiberus.svg" alt="Logo de la RTVE">
             </a>
             <nav>
                 <ul>
-                    <li><a href="#">WORK</a></li>
-                    <li><a href="/about/">ABOUT</a></li>
+                    <li><a href="/hiberus-para-rtveportfolio/work/index.html">WORK</a></li>
+                    <li><a href="/hiberus-para-rtveportfolio/about/index.html">ABOUT</a></li>
                 </ul>
             </nav>
         </div>
         
     </header>
     <main>
-        <section class="filter-work margin-center distance">
+        <section class="head-section">
+            <img class="head-background" src="img/10.png" alt="image">
+            <div class="title-head margin-center">
+                <h1>PORTFOLIO</h1>
+                <h2>EQUIPO DE</h2>
+                <h2>MAQUETACIÓN</h2>
+            </div>
+        </section>
+        <section class="RTVE-section margin-center distance">
+            <div class="box-princ">
+                <div class="column-2">
+                    <h1>PROYECTO</h1>
+                    <h2>RTVE</h2>
+                </div>
+                <div class="column-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet faucibus massa. Morbi sagittis ex fermentum orci dictum, 
+                        sit amet egestas magna suscipit. </p>
+                </div>
+
+            </div>
+        </section>
+        <section class="description-section margin-center distance">
+            <div class="box-princ">
+                <div class="column-3">
+                    <h3>LOREM IPSUM</h3>
+                    <span></span>
+                    <p class="just-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet faucibus massa. Morbi sagittis ex 
+                        fermentum orci dictum, sit amet egestas magna suscipit. </p>
+                </div>
+                <div class="column-3">
+                    <h3>LOREM IPSUM</h3>
+                    <span></span>
+                    <p class="just-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet faucibus massa. Morbi sagittis ex 
+                        fermentum orci dictum, sit amet egestas magna suscipit. </p>
+                </div>
+                <div class="column-3">
+                    <h3>LOREM IPSUM</h3>
+                    <span></span>
+                    <p class="just-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet faucibus massa. Morbi sagittis ex 
+                        fermentum orci dictum, sit amet egestas magna suscipit. </p>
+                </div>
+
+            </div>
+        </section>
+        <section class="filter-section margin-center distance contenedorgaleria">
             <div>
-                <ul>
-                    <li><a href="#">Todos los proyectos</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Deportes</a></li>
-                    <li><a href="#">Televisión</a></li>
-                    <li><a href="#">Otros</a></li>
-                </ul>
+                <a href="#" class="trigger"><h4>NOTICIAS</h4></a><br/>
             </div>
-        </section>
-        <section id="noticias" class="gallery margin-center">
-            <div class="container">
-                <div class="grid">
-                    <div>
-                        <figure class="img-container">
-                            <img src="img/noticias/1-constitucion-40-aniversario.jpg" alt="">
-                        </figure>
-                        <figure class="img-container">
-                            <img src="img/noticias/1-constitucion-40-aniversario.jpg" alt="">
-                        </figure>
-                        <figure class="img-container">
-                            <img src="img/noticias/1-constitucion-40-aniversario.jpg" alt="">
-                        </figure>
-                    </div>
-                </div>
+            <div class="">
+                <a href="#" class="triggerdos"><h4>DEPORTE</h4></a><br/>
             </div>
-        </section>
+            <div class="">
+                <a href="#" class="triggertres"><h4>TELEVISIÓN</h4></a><br/>
+            </div>
+           <div class="">
+            <a href="#" class="triggercuatro"><h4>RADIO</h4></a><br/>
+            </div>
+            <div class="">
+                <a href="#" class="triggercinco"><h4>OTROS</h4></a><br/>
+            </div>
 
-        <section>
-            <div class="flexbox">
-                <div class="item">
-                  <img src="../img/10.png" />
-                  <p class="titleimage">1st item</p>
-                </div>
-                <div class="item">
-                  <img src="../img/12.jpg" />
-                  <p class="titleimage">2nd item</p>
-                </div>
-                <div class="item">
-                  <img src="../img/13.jpg" />
-                  <p class="titleimage">3rd item</p>
-                </div>
-                <div class="item">
-                  <img src="../img/2-constitucion-40-aniversario_40-articulos_.jpg" />
-                  <p class="titleimage">4th item</p>
-                </div>
-                <div class="item">
-                  <img src="../img/4-juicio-proces-cataluna_quien-es-quien_.jpg" />
-                  <p class="titleimage">5th item</p>
-                </div>
-                <div class="item">
-                  <img src="../img/5-infografia-sentencia-proces_.jpg.jpg" />
-                  <p class="titleimage">6th item</p>
-                </div>
-                <div class="item">
-                  <img src="../img/7-juicio-proces-cataluna_salon-tribunal-supremo_.jpg" />
-                  <p class="titleimage">7th item</p>
-                </div>
-                <div class="item">
-                  <img src="../img/8-Juicio-proces-cataluna_dia-a-dia.png" />
-                  <p class="titleimage">8th item</p>
-                </div>
-              </div>
-              
-        </section>
+            <div id="pop-up">
+                <span>
+                    <img class="formatoimagen"
+                        src="img/noticias/14.jpg" alt="noticias">
+                </span>
+            </div>
+            <div id="pop-updos">
+                <span>
+                    <img class="formatoimagen"
+                        src="img/13.jpg" alt="deporte">
+                </span>
+    
+            </div>
+            <div id="pop-uptres">
+                <span>
+                    <img class="formatoimagen"
+                    src="img/10.png" alt="television">
+                </span>
+    
+            </div>
+            <div id="pop-upcuatro">
+                <span>
+                    <img class="formatoimagen"
+                    src="img/noticias/11.jpg" alt="radio">
+                </span>
+            </div>
+            <div id="pop-upcinco">
+                <span>
+                    <img class="formatoimagen"
+                    src="img/otros/rtveInstituto.jpg" alt="otros">
+                </span>
+    
+            </div>
 
+    <!-- :::::: JQUERY PARA LA GALERIA POP UP :::::: -->
+
+    <script src="js/galeria.js"></script>
+
+        </section>
+        <section class="text-section margin-center distance">
+            <h5>Lorem ipsum dolor sit amet</h5>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet faucibus massa. </h6>
+        </section>
+        <div class="imgstatic-section margin-center distance">
+            <div class="act-img">
+                <img src="img/home 1.jpg" alt="">
+            </div>
+            <div class="act-img">
+                <img src="img/home 2.jpg" alt="">
+            </div>
+        </div>
         <footer class="margin-center distance">
             <div id="menu2">
                 <span></span>
-                <a class="logo" href="../index.html">
-                    <img src="../img/logo_hiberus.svg" alt="logo RTVE Footer">
+                <a class="logo" href="index.html">
+                    <img src="img/logo_hiberus.svg" alt="logo RTVE footer">
                 </a>
                 <nav>
                     <ul>
@@ -114,8 +172,6 @@
                 &copy; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
         </footer>
-        
     </main>
-    
 </body>
 </html>
