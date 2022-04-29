@@ -163,7 +163,14 @@ h4 {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #585858;
+    color: #858585;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+}
+
+h4:hover{
+    color: white;
 }
 
 .filter-name{
@@ -283,13 +290,22 @@ footer > .distance{
 }
 
 .formatoimagen{
-    width: 60%;
+    width: 80%;
+    margin-top: -5rem;
+    z-index: 1;
 }
 
 [id^="pop-up"]
  {
     display: none;
     position: absolute;
+    z-index: 1;
+  }
+
+  [class^="trigger"]
+ {
+    position:relative;
+    z-index:1;
   }
 
 /* :*:*:*:*:*:*:*:*:*:*:*  CODIGO PARA GALERIA  *:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*  
