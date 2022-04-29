@@ -292,20 +292,20 @@ footer > .distance{
 .formatoimagen{
     width: 80%;
     margin-top: -5rem;
-    z-index: 1;
+    z-index: 0;
 }
 
 [id^="pop-up"]
  {
     display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
   }
 
   [class^="trigger"]
  {
     position:relative;
-    z-index:1;
+    z-index:0;
   }
 
 /* :*:*:*:*:*:*:*:*:*:*:*  CODIGO PARA GALERIA  *:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*  
