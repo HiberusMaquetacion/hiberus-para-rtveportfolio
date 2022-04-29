@@ -141,7 +141,7 @@ h3{
     justify-content: center;
 }
 
-.linea{
+span{
     width: 71px;
     height: 4px;
 
@@ -153,7 +153,6 @@ h3{
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
 }
 
 h4 {
@@ -161,11 +160,9 @@ h4 {
     font-size: 93px;
     line-height: 92.9%;
     /* identical to box height, or 101px */
-
     display: flex;
     align-items: center;
     text-align: center;
-
     color: #585858;
 }
 
@@ -259,35 +256,10 @@ footer > .distance{
 
 
     color: #FFFFFF;
-    padding: 15px 10px;
-    position: relative;
 }
-
-.filter-work div ul li a:after{
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.filter-work div ul li a:hover:after{
-    width: 100%; 
-    left: 0;  
-}
-
-
 
 .filter-work div ul li{
     padding: 0;
-
-    display: table-cell; 
-    position: relative;     
 }
 
 .filter-work div ul{
@@ -299,69 +271,75 @@ footer > .distance{
     padding-top: 10%;
 }
 
+/* :*:*:*:*:*:*:*:*:*:*:*  CODIGO PARA POPUP  *:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*  
+:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*  */
 
-/* ABOUT */
-
-.head-section-about {
+.contenedorgaleria{
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 18vh;
-}
-
-.h1About {
-    font-weight: 800;
-    font-size: 240px;
-    line-height: 100.9%;
-
-    color: #F3F3F3;
-}
-
-.h2About {
-    width: 70%;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 122%;
-    padding-bottom: 20px;
-    color: #FFFFFF;
-}
-
-.columns-3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-
-}
-
-.columns-3 figure {
-    width: 33,33%;
-    padding: 10px;
-} 
-
-.columns-3 figcaption {
-    justify-content: center;
-    text-align: center;
-    color: white;
-    display: flex;
-} 
-
-.history,
-.team {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.history h2,
-.team h2 {
-    font-size: 68px;
+.formatoimagen{
+    width: 60%;
 }
 
-.team .columns-3 {
-    width: 80%;
-}
+[id^="pop-up"]
+ {
+    display: none;
+    position: absolute;
+  }
 
-.team .columns-3 img {
-    border-radius: 100%;
-    width: 80%;
-}
+/* :*:*:*:*:*:*:*:*:*:*:*  CODIGO PARA GALERIA  *:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*  
+:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*  */
+
+  .flexbox {
+    display: -webkit-flex;
+-webkit-flex-direction:row;
+    flex-direction:row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .flexbox:hover img {
+    opacity: 0.28;
+  }
+  .flexbox .item {
+    position: relative;
+    width: 33.33%;
+  }
+  .flexbox .item img {
+    width: 100%;
+    display: block;
+    transition: all 0.8s;
+  }
+  .flexbox .item .titleimage {
+    position: absolute;
+    top: 48%;
+    left: 0;
+    width: 100%;
+    padding: 0 3%;
+    font-size: 30px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.42);
+  }
+  .flexbox .item:hover img {
+    opacity: 1;
+  }
+  
+  @media (max-width: 860px) {
+    .flexbox {
+      height: 220vw;
+    }
+    .flexbox .item {
+      width: 50%;
+    }
+  }
+  @media (max-width: 667px) {
+    .flexbox {
+      height: auto;
+    }
+    .flexbox .item {
+      width: 100%;
+    }
+  }
