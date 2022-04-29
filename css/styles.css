@@ -141,7 +141,7 @@ h3{
     justify-content: center;
 }
 
-span{
+.linea{
     width: 71px;
     height: 4px;
 
@@ -153,6 +153,7 @@ span{
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 h4 {
@@ -258,10 +259,35 @@ footer > .distance{
 
 
     color: #FFFFFF;
+    padding: 15px 10px;
+    position: relative;
 }
+
+.filter-work div ul li a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.filter-work div ul li a:hover:after{
+    width: 100%; 
+    left: 0;  
+}
+
+
 
 .filter-work div ul li{
     padding: 0;
+
+    display: table-cell; 
+    position: relative;     
 }
 
 .filter-work div ul{
@@ -271,4 +297,71 @@ footer > .distance{
 
 .filter-work {
     padding-top: 10%;
+}
+
+
+/* ABOUT */
+
+.head-section-about {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 18vh;
+}
+
+.h1About {
+    font-weight: 800;
+    font-size: 240px;
+    line-height: 100.9%;
+
+    color: #F3F3F3;
+}
+
+.h2About {
+    width: 70%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 122%;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.columns-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.columns-3 figure {
+    width: 33,33%;
+    padding: 10px;
+} 
+
+.columns-3 figcaption {
+    justify-content: center;
+    text-align: center;
+    color: white;
+    display: flex;
+} 
+
+.history,
+.team {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.history h2,
+.team h2 {
+    font-size: 68px;
+}
+
+.team .columns-3 {
+    width: 80%;
+}
+
+.team .columns-3 img {
+    border-radius: 100%;
+    width: 80%;
 }
