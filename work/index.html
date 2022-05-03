@@ -13,6 +13,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+        <!--jquery --> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+        </script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+        <script>
+            $(document).ready(function(){
+                    console.log('documento jquery cargado.')
+            });
+        </script>
+
 </head>
 <body>
     <header>
@@ -59,10 +70,10 @@
             </div>
         </section>
 
-        <section>
+       <!-- <section>
             <div class="flexbox">
                 <div class="item">
-                  <img src="../img/10.png" />
+                  <img src="../img/10.png?random" />
                   <p class="titleimage">1st item</p>
                 </div>
                 <div class="item">
@@ -93,10 +104,43 @@
                   <img src="../img/8-Juicio-proces-cataluna_dia-a-dia.png" />
                   <p class="titleimage">8th item</p>
                 </div>
+                <div class="item">
+                    <img src="../img/8-Juicio-proces-cataluna_dia-a-dia.png" />
+                    <p class="titleimage">8th item</p>
+                  </div>
+                  <div class="item">
+                    <img src="../img/8-Juicio-proces-cataluna_dia-a-dia.png" />
+                    <p class="titleimage">8th item</p>
+                  </div>
               </div>
               
-        </section>
+        </section>-->
 
+        <section>
+          <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'></div>
+
+              <div class="grid">
+                <div class="grid-item"><img src="../img/7-juicio-proces-cataluna_salon-tribunal-supremo_.jpg" /></div>
+                <div class="grid-item"><img src="../img/5-infografia-sentencia-proces_.jpg.jpg" /></div>
+                <div class="grid-item grid-item--width2"><img src="../img/8-Juicio-proces-cataluna_dia-a-dia.png" /></div>
+                <div class="grid-item"><img src="../img/2-constitucion-40-aniversario_40-articulos_.jpg" /></div>
+                <div class="grid-item"><img src="../img/5-infografia-sentencia-proces_.jpg.jpg" /></div>
+                <div class="grid-item"><img src="../img/7-juicio-proces-cataluna_salon-tribunal-supremo_.jpg" /></div>
+                <div class="grid-item"><img src="../img/5-infografia-sentencia-proces_.jpg.jpg" /></div>
+                <div class="grid-item grid-item--width2"><img src="../img/8-Juicio-proces-cataluna_dia-a-dia.png" /></div>
+                <div class="grid-item"><img src="../img/2-constitucion-40-aniversario_40-articulos_.jpg" /></div>
+                <div class="grid-item"><img src="../img/5-infografia-sentencia-proces_.jpg.jpg" /></div>
+              </div>
+
+                <script>
+                  $('.grid').masonry({
+                    // options
+                    itemSelector: '.grid-item',
+                    columnWidth: 200
+                  });
+                </script>
+
+        </section>
         <footer class="margin-center distance">
             <div id="menu2">
                 <span></span>
@@ -116,6 +160,6 @@
         </footer>
         
     </main>
-    
+
 </body>
 </html>
