@@ -311,12 +311,14 @@ footer > .distance{
 /* :*:*:*:*:*:*:*:*:*:*:*  CODIGO PARA GALERIA  *:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*  
 :*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*:*  */
 
-  .flexbox {
+.flexbox {
     display: -webkit-flex;
--webkit-flex-direction:row;
-    flex-direction:row;
+    display: flex;
+    -webkit-flex-direction:row;
+    flex-direction: row;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    height: 100vw auto;
   }
   .flexbox:hover img {
     opacity: 0.28;
@@ -325,6 +327,14 @@ footer > .distance{
     position: relative;
     width: 33.33%;
   }
+
+  .flexbox .itemfloat {
+    position: relative;
+    width: 33.33%;
+    float: left;
+  }
+
+
   .flexbox .item img {
     width: 100%;
     display: block;
@@ -359,3 +369,12 @@ footer > .distance{
       width: 100%;
     }
   }
+
+
+
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }
+
+.grid-item:hover{
+    opacity: 0.38;
+}
