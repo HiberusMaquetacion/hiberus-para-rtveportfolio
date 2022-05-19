@@ -253,8 +253,6 @@ h6{
 
 #menu2 nav ul li {
     padding-left: 0;
-    position: relative;
-    min-width: 20%;
 }
 
 .copy-footer{
@@ -274,26 +272,29 @@ footer > .distance{
 
 
 /*    WORK.HTML    */
-
+.filter-work {
+    padding-top: 10%;
+    position: relative;
+}
+.filter-work div ul{
+    justify-content: space-between;
+    position: absolute;
+}
+.filter-work div ul li{
+    padding: 0;
+    position: relative;
+}
 .filter-work div ul li a{
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
     padding: 1rem 2rem;
+    position: relative;
+    width: 100%;
+    display: block;
 }
 
-.filter-work div ul li{
-    padding: 0;
-}
-
-.filter-work div ul{
-    justify-content: space-between;
-}
-
-.filter-work {
-    padding-top: 10%;
-}
 
 /*   en el caso de dar funcionamiento a la navegacion de work con una clase active   */
 section.filter-work.margin-center.distance ul a.active , section.filter-work.margin-center.distance ul a:hover {
@@ -301,12 +302,6 @@ section.filter-work.margin-center.distance ul a.active , section.filter-work.mar
     font-weight: 600;
     font-size: 2.8rem;
     letter-spacing: 2px;
-    position: absolute;
-    top: -2rem;
-    left: 0;
-    padding: 0;
-    width: 100%;
-    line-height: 3rem;
 }
 section.filter-work.margin-center.distance ul a.active:after , section.filter-work.margin-center.distance ul a:hover:after {
     display: block;
@@ -317,8 +312,12 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
 }
 
 /* Work galeria con grid */
-
-.grid {
+.gallery h2 {
+    text-transform: uppercase;
+    color: #888;
+    font-size: 6.4rem;
+}
+.gallery .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
@@ -364,4 +363,3 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
 .grid figure:nth-child(21){
     grid-column:11 / span 2;
 }
-
