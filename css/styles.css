@@ -84,10 +84,6 @@ ul {
     align-items: center;
 }
 
-li {
-    padding-left: 15px;
-}
-
 img {
     width: 100%;
 }
@@ -365,5 +361,63 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
     grid-column:11 / span 2;
 }
 
-.gallery .grid li p {display: none;position: absolute;top: 0;left: 0;background: #888;}
-.gallery .grid li:hover p {display: block;}
+/* colocacion imagenes */
+.gallery .grid li figure {
+    position: relative;
+    overflow: hidden;
+    min-height: 27rem;
+}
+.gallery .grid li figure img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: 0;
+    left: 0;
+}
+.gallery .grid li:nth-child(4) figure, .gallery .grid li:nth-child(22) figure {
+    min-height: 56rem;
+}
+.gallery .grid li:nth-child(15) figure, .gallery .grid li:nth-child(16) figure {
+    min-height: 42rem;
+}
+
+.gallery .grid li:nth-child(2) img , .gallery .grid li:nth-child(3) img , .gallery .grid li:nth-child(7) img, .gallery .grid li:nth-child(12) img, .gallery .grid li:nth-child(25) img , .gallery .grid li:nth-child(3) img, .gallery .grid li:nth-child(14) img, .gallery .grid li:nth-child(16) img, .gallery .grid li:nth-child(27) img,.gallery .grid li:nth-child(21) img{
+    left: -50%;
+}
+
+.gallery .grid li p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #131313;
+    padding: 1rem 2rem;
+    margin-top: 4rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-size: 1.4rem;
+}
+.gallery .grid li:hover p {
+    opacity: 0.8;
+}
+.gallery .grid li figcaption{
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: absolute;
+    top: 0;
+    background: #131313;
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+.gallery .grid li:hover figcaption {
+    opacity: 0.8;
+}
+
+.gallery .grid li a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
