@@ -330,17 +330,21 @@ footer > .distance{
 
 /*   en el caso de dar funcionamiento a la navegacion de work con una clase active   */
 section.filter-work.margin-center.distance ul a.active , section.filter-work.margin-center.distance ul a:hover {
-    text-transform: uppercase;
     font-weight: 600;
-    font-size: 2.4rem;
-    letter-spacing: 2px;
 }
-section.filter-work.margin-center.distance ul a.active:after , section.filter-work.margin-center.distance ul a:hover:after {
+section.filter-work.margin-center.distance ul a:after{
+    width: 0;
     display: block;
     content: "";
     background: #c65300;
     height: 0.3rem;
-    margin-top: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s;
+}
+section.filter-work.margin-center.distance ul a.active:after , section.filter-work.margin-center.distance ul a:hover:after {
+    width: 100%;
 }
 
 /* Work galeria con grid */
@@ -352,7 +356,7 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
 }
 .gallery .grid ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
 }
 
@@ -360,44 +364,42 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
     position: relative;
 }
 .gallery .grid li:nth-child(1),.gallery .grid li:nth-child(5), .gallery .grid li:nth-child(10),.gallery .grid li:nth-child(17),.gallery .grid li:nth-child(23){
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 4;
 }
 .gallery .grid li:nth-child(2) {
-    grid-column: 7 / span 3;
+    grid-column: 5 / span 2;
 }
-.gallery .grid li:nth-child(3),.gallery .grid li:nth-child(14), .gallery .grid li:nth-child(16),.gallery .grid li:nth-child(27){
-    grid-column: 10 / span 3;
+.gallery .grid li:nth-child(3),.gallery .grid li:nth-child(14), .gallery .grid li:nth-child(16),.gallery .grid li:nth-child(21), .gallery .grid li:nth-child(27){
+    grid-column: 7 / span 2;
 }
 .gallery .grid li:nth-child(4),.gallery .grid li:nth-child(22){
-    grid-column: 1 / span 12;
+    grid-column: 1 / span 8;
 }
 .gallery .grid li:nth-child(6),.gallery .grid li:nth-child(11),.gallery .grid li:nth-child(18),.gallery .grid li:nth-child(24){
-    grid-column:7 / span 6;
+    grid-column:5 / span 4;
 }
 .gallery .grid li:nth-child(7),.gallery .grid li:nth-child(12),.gallery .grid li:nth-child(25){
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
 }
 .gallery .grid li:nth-child(8){
-    grid-column: 4 / span 5;
+    grid-column: 3 / span 3;
 }
 .gallery .grid li:nth-child(9){
-    grid-column: 9 / span 5;
+    grid-column: 6 / span 3;
 }
 .gallery .grid li:nth-child(13),.gallery .grid li:nth-child(26){
-    grid-column:4 / span 6;
+    grid-column: 3 / span 4;
 }
 .gallery .grid li:nth-child(15){
-    grid-column:1 / span 9;
+    grid-column: 1 / span 6;
 }
 .gallery .grid li:nth-child(19){
-    grid-column:1 / span 5;
+    grid-column: 1 / span 3;
 }
 .gallery .grid li:nth-child(20){
-    grid-column:6 / span 5;
+    grid-column: 4 / span 3;
 }
-.gallery .grid li:nth-child(21){
-    grid-column:11 / span 2;
-}
+
 
 /* colocacion imagenes */
 .gallery .grid li figure {
@@ -427,7 +429,6 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
     position: absolute;
     top: 0;
     left: 0;
-    background: #131313;
     padding: 1rem 2rem;
     margin-top: 4rem;
     opacity: 0;
