@@ -466,3 +466,5 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
 #radio, #television, #otros, #deportes {
     padding-top: 5rem;
 }
+
+.hidden {display:none}
