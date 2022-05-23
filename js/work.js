@@ -13,11 +13,10 @@ $(function(){
     $('ul.filter-sections li a').click(function(event) {
         event.preventDefault();
         $('section.gallery').removeClass('hidden');
-         $('.filter-work div ul li a').removeClass('active');
+        $('.filter-work div ul li a').removeClass('active');
         
-        var textoFiltro = $(this).text().toLowerCase();
+        var textoFiltro = $(this).data('ref');
         $('section.gallery[id!="'+textoFiltro+'"]').addClass('hidden');
         $('.filter-work div ul li a[href="#'+textoFiltro+'"]').addClass('active');
-    
     });
 });
