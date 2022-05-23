@@ -7,6 +7,7 @@ $(function(){
     id = id.substr(1,length[id]);
     
     $('section.gallery[id!="'+id+'"]').addClass('hidden');
+    .filter-work div ul li a[href=="#'+id+'"]').addClass('active');
     
     $('ul.filter-sections li a').click(function() {
     var textoFiltro = $(this).text().toLowerCase();
