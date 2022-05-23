@@ -16,7 +16,7 @@ $(function(){
          $('.filter-work div ul li a').removeClass('active');
         
         var textoFiltro = $(this).text().toLowerCase();
-        $('section.gallery[id!="'+id+'"]').addClass('hidden');
+        $('section.gallery[id!="'+textoFiltro+'"]').addClass('hidden');
         $('.filter-work div ul li a[href="#'+textoFiltro+'"]').addClass('active');
     
     });
