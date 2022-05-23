@@ -1,10 +1,12 @@
 $(function(){
-    var actual = window.location+'';
+    let actual = window.location+'';
     //Se realiza la división de la URL
-    var split = actual.split("/");
+    let split = actual.split("/");
     //Se obtiene el ultimo valor de la URL
-    var id = split[split.length-1];
-    console.log(id);
+    let id = split[split.length-1];
+    id = id.substr(1,length[id]);
+    
+    $('section.gallery[id!="'+id+'"]').addClass('hidden');
     
     $('ul.filter-sections li a').click(function() {
     var textoFiltro = $(this).text().toLowerCase();
