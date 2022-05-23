@@ -400,6 +400,33 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
     grid-column: 4 / span 3;
 }
 
+.gallery .especiales li:nth-child(1){
+    grid-column: 1 / span 8;
+}
+
+.gallery .especiales li:nth-child(2){
+    grid-column: 1 / span 4;
+}
+
+.gallery .especiales li:nth-child(3){
+    grid-column: 5 / span 4;
+}
+
+.gallery .otros li:nth-child(1) {
+    grid-column: 1 / span 4;
+}
+
+.gallery .otros li:nth-child(2){
+    grid-column: 5 / span 4;
+}
+
+.gallery .otros li:nth-child(3){
+    grid-column: 1 / span 6;
+}
+
+.gallery .otros li:nth-child(4) {
+    grid-column: 7 / span 2;
+}
 
 /* colocacion imagenes */
 .gallery .grid li figure {
@@ -414,15 +441,46 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
     top: 0;
     left: 0;
 }
-.gallery .grid li:nth-child(4) figure, .gallery .grid li:nth-child(22) figure {
+
+.gallery .especiales li:nth-child(2) figure img,
+.gallery .especiales li:nth-child(3) figure img,
+.gallery .otros li:nth-child(2) figure img,
+.gallery .otros li:nth-child(3) figure img {
+    left: 0;
+}
+
+.gallery .otros li:nth-child(1) figure img,
+.gallery .otros li:nth-child(2) figure img{
+    width: 100%;
+}
+
+
+.gallery .grid li:nth-child(4) figure, .gallery .grid li:nth-child(22) figure, .gallery .especiales li:nth-child(1) figure {
     min-height: 56rem;
 }
-.gallery .grid li:nth-child(15) figure, .gallery .grid li:nth-child(16) figure {
+.gallery .grid li:nth-child(15) figure,
+.gallery .grid li:nth-child(16) figure,
+.gallery .otros li:nth-child(3) figure,
+.gallery .otros li:nth-child(4) figure{
     min-height: 42rem;
 }
 
-.gallery .grid li:nth-child(2) img , .gallery .grid li:nth-child(3) img , .gallery .grid li:nth-child(7) img, .gallery .grid li:nth-child(12) img, .gallery .grid li:nth-child(25) img , .gallery .grid li:nth-child(3) img, .gallery .grid li:nth-child(14) img, .gallery .grid li:nth-child(16) img, .gallery .grid li:nth-child(27) img,.gallery .grid li:nth-child(21) img{
+.gallery .grid li:nth-child(2) img ,
+.gallery .grid li:nth-child(3) img ,
+.gallery .grid li:nth-child(7) img,
+.gallery .grid li:nth-child(12) img,
+.gallery .grid li:nth-child(25) img ,
+.gallery .grid li:nth-child(3) img,
+.gallery .grid li:nth-child(14) img,
+.gallery .grid li:nth-child(16) img, 
+.gallery .grid li:nth-child(27) img,
+.gallery .grid li:nth-child(21) img
+{
     left: -50%;
+}
+
+.gallery .otros li:nth-child(4) img {
+    left: -91%;
 }
 
 .gallery .grid li p {
