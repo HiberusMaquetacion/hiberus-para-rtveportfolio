@@ -1,4 +1,11 @@
 $(function(){
+    var actual = window.location+'';
+    //Se realiza la división de la URL
+    var split = actual.split("/");
+    //Se obtiene el ultimo valor de la URL
+    var id = split[split.length-1];
+    console.log(id);
+    
     $('ul.filter-sections li a').click(function() {
     var textoFiltro = $(this).text().toLowerCase();
     if(textoFiltro == 'noticias'){   
