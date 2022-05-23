@@ -16,7 +16,9 @@ $(function(){
         $('.filter-work div ul li a').removeClass('active');
         
         var textoFiltro = $(this).data('ref');
-        $('section.gallery[id!="'+textoFiltro+'"]').addClass('hidden');
+        if (textoFiltro != 'todos') {
+           $('section.gallery[id!="'+textoFiltro+'"]').addClass('hidden');           
+        }
         $('.filter-work div ul li a[href="#'+textoFiltro+'"]').addClass('active');
     });
 });
