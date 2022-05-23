@@ -8,8 +8,12 @@ $(function(){
     
     $('section.gallery[id!="'+id+'"]').addClass('hidden');
     $('.filter-work div ul li a[href="#'+id+'"]').addClass('active');
-    
-    $('ul.filter-sections li a').click(function() {
+  
+
+    $('ul.filter-sections li a').click(function(event) {
+        event.preventDefault();
+        $('section.gallery').removeClass('hidden');
+        
         var textoFiltro = $(this).text().toLowerCase();
         $('section.gallery[id!="'+id+'"]').addClass('hidden');
         $('.filter-work div ul li a[href="#'+textoFiltro+'"]').addClass('active');
