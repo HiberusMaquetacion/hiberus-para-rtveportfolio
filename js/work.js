@@ -13,6 +13,7 @@ $(function(){
     $('ul.filter-sections li a').click(function(event) {
         event.preventDefault();
         $('section.gallery').removeClass('hidden');
+         $('.filter-work div ul li a').removeClass('active');
         
         var textoFiltro = $(this).text().toLowerCase();
         $('section.gallery[id!="'+id+'"]').addClass('hidden');
