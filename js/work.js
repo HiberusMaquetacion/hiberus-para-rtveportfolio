@@ -6,7 +6,7 @@ $(function(event){
     let id = split[split.length-1];
     id = id.substr(1,length[id]);
     
-    event.preventDefault();
+   // event.preventDefault();
     $('section.gallery[id!="'+id+'"]').addClass('hidden');
     $('.filter-work div ul li a[href="#'+id+'"]').addClass('active');
   
