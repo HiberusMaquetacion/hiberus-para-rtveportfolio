@@ -176,6 +176,8 @@ span{
     display: flex;
     align-items: center;
     text-align: center;
+    font-size: 1.5em;
+    color: #a9a9a9;
 }
 
 h4 {
