@@ -363,7 +363,12 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
 .gallery .grid li{
     position: relative;
 }
-.gallery .grid li:nth-child(1),.gallery .grid li:nth-child(5), .gallery .grid li:nth-child(10),.gallery .grid li:nth-child(17),.gallery .grid li:nth-child(23){
+.gallery .grid li:nth-child(1),
+.gallery .grid li:nth-child(5), 
+.gallery .grid li:nth-child(10),
+.gallery .grid li:nth-child(17),
+.gallery .grid li:nth-child(23),
+.gallery .grid li:nth-child(22){
     grid-column: 1 / span 4;
 }
 .gallery .grid li:nth-child(2) {
@@ -372,19 +377,24 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
 .gallery .grid li:nth-child(3),.gallery .grid li:nth-child(14), .gallery .grid li:nth-child(16),.gallery .grid li:nth-child(21), .gallery .grid li:nth-child(27){
     grid-column: 7 / span 2;
 }
-.gallery .grid li:nth-child(4),.gallery .grid li:nth-child(22){
+.gallery .grid li:nth-child(4){
     grid-column: 1 / span 8;
 }
 .gallery .grid li:nth-child(6),.gallery .grid li:nth-child(11),.gallery .grid li:nth-child(18),.gallery .grid li:nth-child(24){
     grid-column:5 / span 4;
 }
-.gallery .grid li:nth-child(7),.gallery .grid li:nth-child(12),.gallery .grid li:nth-child(25){
+.gallery .grid li:nth-child(7),
+.gallery .grid li:nth-child(12),
+.gallery .grid li:nth-child(25),
+.gallery .deportes li:nth-child(8) figure{
     grid-column: 1 / span 2;
 }
-.gallery .grid li:nth-child(8){
+.gallery .grid li:nth-child(8),
+.gallery .deportes li:nth-child(9) figure {
     grid-column: 3 / span 3;
 }
-.gallery .grid li:nth-child(9){
+.gallery .grid li:nth-child(9),
+.gallery .deportes li:nth-child(10) figure{
     grid-column: 6 / span 3;
 }
 .gallery .grid li:nth-child(13),.gallery .grid li:nth-child(26){
@@ -400,7 +410,10 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
     grid-column: 4 / span 3;
 }
 
-.gallery .especiales li:nth-child(1){
+.gallery .especiales li:nth-child(1),
+.gallery .internacionales li:nth-child(3),
+.gallery .deportes li:nth-child(3)
+{
     grid-column: 1 / span 8;
 }
 
@@ -408,24 +421,47 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
     grid-column: 1 / span 4;
 }
 
-.gallery .especiales li:nth-child(3){
+.gallery .especiales li:nth-child(3),
+.gallery .grid li:nth-child(23){
     grid-column: 5 / span 4;
 }
 
-.gallery .otros li:nth-child(1) {
+.gallery .otros li:nth-child(1),
+.gallery .deportes li:nth-child(1),
+.gallery .internacionales li:nth-child(1),
+.gallery .deportes li:nth-child(4),
+.gallery .deportes li:nth-child(11){
     grid-column: 1 / span 4;
 }
 
-.gallery .otros li:nth-child(2){
+.gallery .otros li:nth-child(2),
+.gallery .deportes li:nth-child(2),
+.gallery .internacionales li:nth-child(2),
+.gallery .deportes li:nth-child(5),
+.gallery .deportes li:nth-child(12){
     grid-column: 5 / span 4;
 }
 
-.gallery .otros li:nth-child(3){
+.gallery .otros li:nth-child(3),
+.gallery .deportes li:nth-child(6){
     grid-column: 1 / span 6;
 }
 
-.gallery .otros li:nth-child(4) {
+.gallery .otros li:nth-child(4),
+.gallery .deportes li:nth-child(7) {
     grid-column: 7 / span 2;
+}
+
+.gallery .deportes li:nth-child(8) {
+    grid-column: 1 / span 2;
+}
+
+.gallery .deportes li:nth-child(9) {
+    grid-column: 3 / span 3;
+}
+
+.gallery .deportes li:nth-child(10) {
+    grid-column: 6 / span 3;
 }
 
 /* colocacion imagenes */
@@ -439,13 +475,19 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
     height: 100%;
     width: auto;
     top: 0;
+   
     left: 0;
 }
 
 .gallery .especiales li:nth-child(2) figure img,
 .gallery .especiales li:nth-child(3) figure img,
 .gallery .otros li:nth-child(2) figure img,
-.gallery .otros li:nth-child(3) figure img {
+.gallery .otros li:nth-child(3) figure img,
+.gallery .internacionales li:nth-child(2) figure img,
+.gallery .internacionales li:nth-child(3) figure img,
+.gallery .deportes li:nth-child(3) figure img, 
+.gallery .deportes li:nth-child(2) figure img,
+.gallery .deportes li:nth-child(12) figure img {
     left: 0;
 }
 
@@ -454,15 +496,24 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
     width: 100%;
 }
 
-
-.gallery .grid li:nth-child(4) figure, .gallery .grid li:nth-child(22) figure, .gallery .especiales li:nth-child(1) figure {
+.gallery .grid li:nth-child(4) figure,
+.gallery .especiales li:nth-child(1) figure,
+.gallery .internacionales li:nth-child(3) figure,
+.gallery .deportes li:nth-child(3) figure {
     min-height: 56rem;
 }
 .gallery .grid li:nth-child(15) figure,
 .gallery .grid li:nth-child(16) figure,
 .gallery .otros li:nth-child(3) figure,
-.gallery .otros li:nth-child(4) figure{
+.gallery .otros li:nth-child(4) figure,
+.gallery .deportes li:nth-child(6) figure,
+.gallery .deportes li:nth-child(7) figure {
     min-height: 42rem;
+}
+
+.gallery .deportes li:nth-child(4) figure,
+.gallery .deportes li:nth-child(5) figure {
+    min-height: 27rem;
 }
 
 .gallery .grid li:nth-child(2) img ,
@@ -474,9 +525,14 @@ section.filter-work.margin-center.distance ul a.active:after , section.filter-wo
 .gallery .grid li:nth-child(14) img,
 .gallery .grid li:nth-child(16) img, 
 .gallery .grid li:nth-child(27) img,
-.gallery .grid li:nth-child(21) img
+.gallery .grid li:nth-child(21) img,
+.gallery .deportes li:nth-child(8) img
 {
     left: -50%;
+}
+
+.gallery .deportes li:nth-child(9) img {
+    left: -20%;
 }
 
 .gallery .otros li:nth-child(4) img {
